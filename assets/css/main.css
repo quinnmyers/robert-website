@@ -376,6 +376,110 @@ textarea {
   font-family: "Big John";
   src: url(/assets/big_john.otf); }
 
-h1 {
-  color: red;
-  font-family: "Big John"; }
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  margin: 0;
+  padding: 0;
+  font-family: "Big John", Arial;
+  letter-spacing: 2px; }
+
+a {
+  text-decoration: none; }
+
+.main-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  background: lightskyblue; }
+  .main-container .content-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-item-align: center;
+        align-self: center;
+    width: 1000px;
+    min-height: calc(100vh - 120px);
+    margin-top: 20px;
+    background: pink; }
+
+.header {
+  display: -ms-flexbox;
+  display: flex;
+  height: 100px; }
+  .header .header-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    width: 100%;
+    border-bottom: 2px solid #25291C; }
+    .header .header-wrapper .header-container {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: end;
+          align-items: flex-end;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      width: 1000px; }
+      .header .header-wrapper .header-container .logo {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-item-align: center;
+            align-self: center;
+        height: 75px; }
+      .header .header-wrapper .header-container .desktop-nav, .header .header-wrapper .header-container ul {
+        list-style: none;
+        font-family: "Avenir-Book";
+        font-size: 14pt;
+        letter-spacing: 1px;
+        color: #91CB3E;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 4px; }
+        .header .header-wrapper .header-container .desktop-nav li, .header .header-wrapper .header-container ul li {
+          display: inline;
+          padding: 0px 15px; }
+          .header .header-wrapper .header-container .desktop-nav li a, .header .header-wrapper .header-container .desktop-nav li a:hover, .header .header-wrapper .header-container .desktop-nav li a:visited, .header .header-wrapper .header-container ul li a, .header .header-wrapper .header-container ul li a:hover, .header .header-wrapper .header-container ul li a:visited {
+            color: #91CB3E; }
+
+.footer {
+  display: -ms-flexbox;
+  display: flex;
+  height: auto; }
+  .footer .footer-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    width: 100%;
+    border-top: 2px solid #25291C; }
+    .footer .footer-wrapper .footer-container {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      width: 1000px; }
+      .footer .footer-wrapper .footer-container .logo {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-item-align: center;
+            align-self: center;
+        height: 75px; }
+      .footer .footer-wrapper .footer-container .footer-nav, .footer .footer-wrapper .footer-container ul {
+        list-style: none;
+        font-family: "Avenir-Book";
+        font-size: 12pt;
+        letter-spacing: 1px;
+        color: #91CB3E;
+        margin: 0;
+        padding: 0;
+        margin-top: 4px; }
+        .footer .footer-wrapper .footer-container .footer-nav li, .footer .footer-wrapper .footer-container ul li {
+          padding: 5px 0px; }
+          .footer .footer-wrapper .footer-container .footer-nav li a, .footer .footer-wrapper .footer-container .footer-nav li a:hover, .footer .footer-wrapper .footer-container .footer-nav li a:visited, .footer .footer-wrapper .footer-container ul li a, .footer .footer-wrapper .footer-container ul li a:hover, .footer .footer-wrapper .footer-container ul li a:visited {
+            color: #91CB3E; }
