@@ -11,10 +11,11 @@
       align-items: flex-end
       justify-content: space-between
       width: 1000px
-      .logo
+      .brand, .logo
         display: flex
         align-self: center
         height: 75px
+        margin-left: 10px
       .desktop-nav, ul
         list-style: none
         font-family: "Avenir-Book"
@@ -29,3 +30,20 @@
           padding: 0px 15px
           a, a:hover, a:visited
             color: $lightgreen
+
+      .hamburger
+        display: none
+        flex-direction: column
+        justify-content: space-between
+        align-self: center
+        height: 30px
+        width: 50px
+        background: red
+        .line1, .line2, .line3
+          background: $gunmetal
+          height: 2px
+          width: 100%
+
+
+.active
+  display: flex !important

@@ -1,10 +1,18 @@
 section.header
   .header-wrapper
     .header-container
-      img.logo(src="/assets/images/logo.svg")
+      a.brand(href="index.html")
+        img.logo(src="../assets/images/logo.svg")
+
 
       ul.desktop-nav
-        li.nav-item: a(href="#") BIO
-        li.nav-item: a(href="#") GALLERY
-        li.nav-item: a(href="#") MY ARTWORK
-        li.nav-item: a(href="#") CONTACT
+        li.nav-item: a(href="bio.html") BIO
+        li.nav-item: a(href="gallery.html") GALLERY
+        li.nav-item: a(href="my-artwork.html") MY ARTWORK
+        li.nav-item: a(href="contact.html") CONTACT
+
+
+      .hamburger.active
+        .line1
+        .line2
+        .line3

@@ -424,12 +424,13 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
       width: 1000px; }
-      .header .header-wrapper .header-container .logo {
+      .header .header-wrapper .header-container .brand, .header .header-wrapper .header-container .logo {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-item-align: center;
             align-self: center;
-        height: 75px; }
+        height: 75px;
+        margin-left: 10px; }
       .header .header-wrapper .header-container .desktop-nav, .header .header-wrapper .header-container ul {
         list-style: none;
         font-family: "Avenir-Book";
@@ -444,6 +445,25 @@ a {
           padding: 0px 15px; }
           .header .header-wrapper .header-container .desktop-nav li a, .header .header-wrapper .header-container .desktop-nav li a:hover, .header .header-wrapper .header-container .desktop-nav li a:visited, .header .header-wrapper .header-container ul li a, .header .header-wrapper .header-container ul li a:hover, .header .header-wrapper .header-container ul li a:visited {
             color: #91CB3E; }
+      .header .header-wrapper .header-container .hamburger {
+        display: none;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+        -ms-flex-item-align: center;
+            align-self: center;
+        height: 30px;
+        width: 50px;
+        background: red; }
+        .header .header-wrapper .header-container .hamburger .line1, .header .header-wrapper .header-container .hamburger .line2, .header .header-wrapper .header-container .hamburger .line3 {
+          background: #292F36;
+          height: 2px;
+          width: 100%; }
+
+.active {
+  display: -ms-flexbox !important;
+  display: flex !important; }
 
 .footer {
   display: -ms-flexbox;
@@ -483,3 +503,77 @@ a {
           padding: 5px 0px; }
           .footer .footer-wrapper .footer-container .footer-nav li a, .footer .footer-wrapper .footer-container .footer-nav li a:hover, .footer .footer-wrapper .footer-container .footer-nav li a:visited, .footer .footer-wrapper .footer-container ul li a, .footer .footer-wrapper .footer-container ul li a:hover, .footer .footer-wrapper .footer-container ul li a:visited {
             color: #91CB3E; }
+
+.home {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  background: green; }
+  .home .home-container {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center;
+    margin-top: 100px;
+    background: yellow; }
+    .home .home-container .home-left {
+      width: 45%;
+      height: 400px;
+      background: red;
+        background-image: url(/assets/images/roberthomeimage.jpg);
+        background-size: cover;
+        background-position: top; }
+    .home .home-container .line {
+      height: 300px;
+      width: 2px;
+      background: #292F36; }
+    .home .home-container .home-right {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center;
+      width: 45%;
+      min-height: 100%;
+      background: red; }
+      .home .home-container .home-right .home-text {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+        .home .home-container .home-right .home-text h3 {
+          margin-bottom: 30px;
+          font-size: 18pt; }
+        .home .home-container .home-right .home-text p {
+          font-family: "Avenir-Book";
+          margin: 0;
+          font-size: 14pt; }
+        .home .home-container .home-right .home-text .first {
+          margin-bottom: 30px; }
+
+.bio .bio-container .page-title {
+  color: #4C934C;
+  font-size: 26pt;
+  margin-top: 12px;
+  margin-bottom: 20px; }
+
+.bio .bio-image {
+  height: 400px;
+  width: 100%;
+  background-image: url(/assets/images/bio-photo.jpg);
+  background-position: center;
+  background-size: cover; }
+
+.bio .bio-text {
+  font-family: "Avenir-Book";
+  line-height: 30px;
+  margin-top: 15px; }
+  .bio .bio-text p {
+    margin: 0; }
+  .bio .bio-text .bio {
+    margin-bottom: 15px; }
