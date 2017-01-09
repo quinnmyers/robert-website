@@ -718,6 +718,133 @@ a {
   .bio .bio-image {
     height: 200px !important; } }
 
+.gallery .gallery-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  height: auto;
+  width: 100%;
+  background: khaki;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  .gallery .gallery-container .production-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    width: 100%;
+    height: auto;
+    background: lightskyblue;
+    margin-bottom: 30px; }
+    .gallery .gallery-container .production-container .production-title, .gallery .gallery-container .production-container h2 {
+      font-family: "Avenir-Book";
+      font-size: 18pt;
+      letter-spacing: 2px; }
+    .gallery .gallery-container .production-container .img-row {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      -ms-flex-align: center;
+          align-items: center;
+      width: 100%;
+      height: 250px;
+      background: purple; }
+      .gallery .gallery-container .production-container .img-row .img1, .gallery .gallery-container .production-container .img-row .img2, .gallery .gallery-container .production-container .img-row .img3, .gallery .gallery-container .production-container .img-row .img4, .gallery .gallery-container .production-container .img-row .img5, .gallery .gallery-container .production-container .img-row .img6 {
+        height: 80%;
+        width: 30%;
+        background: red;
+          background-size: cover;
+          background-repeat: no-repeat; }
+      .gallery .gallery-container .production-container .img-row .img1 {
+        background-image: url(/assets/images/afunnything/forumhero.jpg);
+        background-position: 0px -30px; }
+      .gallery .gallery-container .production-container .img-row .img2 {
+        background-image: url(/assets/images/afunnything/forumprettylittlepic.jpg);
+        background-position: 0px 0px; }
+      .gallery .gallery-container .production-container .img-row .img3 {
+        background-image: url(/assets/images/afunnything/forumrob_anna.jpg);
+        background-position: 0px 0px; }
+      .gallery .gallery-container .production-container .img-row .img4 {
+        background-image: url(/assets/images/afunnything/forumrob.jpg);
+        background-position: 0px -120px; }
+      .gallery .gallery-container .production-container .img-row .img5 {
+        background-image: url(/assets/images/afunnything/rob_michele.jpg);
+        background-position: 0px -40px; }
+      .gallery .gallery-container .production-container .img-row .img7, .gallery .gallery-container .production-container .img-row .img8, .gallery .gallery-container .production-container .img-row .img9 {
+        height: 80%;
+        width: 30%;
+        background: red;
+          background-size: cover;
+          background-repeat: no-repeat; }
+      .gallery .gallery-container .production-container .img-row .img7 {
+        background-image: url(/assets/images/biglove/lydia_nikos.jpg);
+        background-position: 0px 0px; }
+      .gallery .gallery-container .production-container .img-row .img8 {
+        background-image: url(/assets/images/biglove/lydia_nikos2.jpg);
+        background-position: 0px -140px; }
+      .gallery .gallery-container .production-container .img-row .img9 {
+        background-image: url(/assets/images/biglove/rehearsalphoto.jpg);
+        background-position: 0px 0px; }
+      .gallery .gallery-container .production-container .img-row .img10, .gallery .gallery-container .production-container .img-row .img11, .gallery .gallery-container .production-container .img-row .img12,
+      .gallery .gallery-container .production-container .img-row .img13, .gallery .gallery-container .production-container .img-row .img14, .gallery .gallery-container .production-container .img-row .img15 {
+        height: 80%;
+        width: 30%;
+        background: red;
+          background-size: cover;
+          background-repeat: no-repeat; }
+      .gallery .gallery-container .production-container .img-row .img10 {
+        background-image: url(/assets/images/pajama/pjgamedreamballet.jpg);
+        background-position: 0px 0px; }
+      .gallery .gallery-container .production-container .img-row .img11 {
+        background-image: url(/assets/images/pajama/pjgamehines_gladys.jpg);
+        background-position: 0px -140px; }
+      .gallery .gallery-container .production-container .img-row .img12 {
+        background-image: url(/assets/images/pajama/pjgamehines_mabel.jpg);
+        background-position: 0px 0px; }
+      .gallery .gallery-container .production-container .img-row .img13 {
+        background-image: url(/assets/images/pajama/pjgamehines.jpg);
+        background-position: 0px 0px; }
+    .gallery .gallery-container .production-container .img16, .gallery .gallery-container .production-container .img17, .gallery .gallery-container .production-container .img18 {
+      height: 80%;
+      width: 30%;
+      background: red;
+        background-size: cover;
+        background-repeat: no-repeat; }
+    .gallery .gallery-container .production-container .img16 {
+      background-image: url(/assets/images/heart/heartmoviestill.jpg);
+      background-position: center; }
+  .gallery .gallery-container .img19, .gallery .gallery-container .img20, .gallery .gallery-container .img21 {
+    height: 80%;
+    width: 30%;
+    background: red;
+      background-size: cover;
+      background-repeat: no-repeat; }
+  .gallery .gallery-container .img19 {
+    background-image: url(/assets/images/mermaid/mermaid1.jpg);
+    background-position: 0px -10px; }
+  .gallery .gallery-container .img22, .gallery .gallery-container .img23, .gallery .gallery-container .img24 {
+    height: 80%;
+    width: 30%;
+    background: red;
+      background-size: cover;
+      background-repeat: no-repeat; }
+  .gallery .gallery-container .img22 {
+    background-image: url(/assets/images/scarystories/ss1.jpg);
+    background-position: 0px 0px; }
+  .gallery .gallery-container .img25, .gallery .gallery-container .img26, .gallery .gallery-container .img27 {
+    height: 80%;
+    width: 30%;
+    background: red;
+      background-size: cover;
+      background-repeat: no-repeat; }
+  .gallery .gallery-container .img25 {
+    background-image: url(/assets/images/spellingbee/spellingbeebarfee.jpg);
+    background-position: 0px -50px; }
+  .gallery .gallery-container .first {
+    margin-top: 30px; }
+
 .contact .contact-container .first, .contact .contact-container .second {
   font-family: "Avenir-Book";
   font-size: 14pt; }
