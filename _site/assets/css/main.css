@@ -396,14 +396,22 @@ a {
   .main-container .content-container {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: center;
+        justify-content: center;
     -ms-flex-item-align: center;
         align-self: center;
     width: 1000px;
     min-height: calc(100vh - 120px);
-    margin-top: 20px;
     background: pink; }
+    .main-container .content-container .content-column {
+      background: yellow;
+      width: calc(100% - 40px); }
+
+@media (max-width: 1000px) {
+  .content-container {
+    width: 100% !important; } }
 
 .header {
   display: -ms-flexbox;
@@ -455,27 +463,76 @@ a {
             align-self: center;
         height: 30px;
         width: 50px;
-        background: red; }
+        background: red;
+        margin-right: 20px; }
         .header .header-wrapper .header-container .hamburger .line1, .header .header-wrapper .header-container .hamburger .line2, .header .header-wrapper .header-container .hamburger .line3 {
           background: #292F36;
           height: 2px;
           width: 100%; }
 
-.active {
+.mobile-nav {
+  display: none;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  width: 100%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  background: khaki; }
+  .mobile-nav .mobile-nav-list, .mobile-nav ul {
+    list-style: none;
+    text-align: right;
+    padding-right: 25px;
+    font-family: "Avenir-Book"; }
+    .mobile-nav .mobile-nav-list .nav-item, .mobile-nav .mobile-nav-list a, .mobile-nav ul .nav-item, .mobile-nav ul a {
+      color: #292F36;
+      padding-bottom: 15px !important;
+      font-size: 12pt !important; }
+      .mobile-nav .mobile-nav-list .nav-item:first-child, .mobile-nav .mobile-nav-list a:first-child, .mobile-nav ul .nav-item:first-child, .mobile-nav ul a:first-child {
+        padding-top: 15px !important; }
+
+.is-active {
   display: -ms-flexbox !important;
   display: flex !important; }
+
+@media (max-width: 800px) {
+  .desktop-nav, ul {
+    font-size: 12pt !important; } }
+
+@media (max-width: 700px) {
+  .desktop-nav {
+    display: none !important; }
+  .hamburger {
+    display: -ms-flexbox !important;
+    display: flex !important; } }
+
+@media (max-width: 650px) {
+  .header {
+    height: 80px !important; }
+  .brand, .logo {
+    height: 60px !important; } }
+
+@media (max-width: 500px) {
+  .brand, .logo {
+    height: 60px !important; } }
+
+@media (max-width: 500px) {
+  .brand, .logo {
+    height: 60px !important; } }
 
 .footer {
   display: -ms-flexbox;
   display: flex;
-  height: auto; }
+  height: auto;
+  -ms-flex-pack: center;
+      justify-content: center; }
   .footer .footer-wrapper {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
         justify-content: center;
     width: 100%;
-    border-top: 2px solid #25291C; }
+    border-top: 2px solid #25291C;
+    background: blue; }
     .footer .footer-wrapper .footer-container {
       display: -ms-flexbox;
       display: flex;
@@ -483,13 +540,22 @@ a {
           align-items: center;
       -ms-flex-pack: justify;
           justify-content: space-between;
-      width: 1000px; }
-      .footer .footer-wrapper .footer-container .logo {
+      width: 960px; }
+      .footer .footer-wrapper .footer-container .footer-logo {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-item-align: center;
             align-self: center;
-        height: 75px; }
+        height: 75px;
+        background: red; }
+      .footer .footer-wrapper .footer-container .insta {
+        height: 65px;
+        width: 65px;
+        background: lightskyblue;
+          background-image: url(/assets/images/insta-icon.svg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain; }
       .footer .footer-wrapper .footer-container .footer-nav, .footer .footer-wrapper .footer-container ul {
         list-style: none;
         font-family: "Avenir-Book";
@@ -498,11 +564,53 @@ a {
         color: #91CB3E;
         margin: 0;
         padding: 0;
-        margin-top: 4px; }
+        margin-top: 4px;
+        background: khaki; }
         .footer .footer-wrapper .footer-container .footer-nav li, .footer .footer-wrapper .footer-container ul li {
           padding: 5px 0px; }
           .footer .footer-wrapper .footer-container .footer-nav li a, .footer .footer-wrapper .footer-container .footer-nav li a:hover, .footer .footer-wrapper .footer-container .footer-nav li a:visited, .footer .footer-wrapper .footer-container ul li a, .footer .footer-wrapper .footer-container ul li a:hover, .footer .footer-wrapper .footer-container ul li a:visited {
             color: #91CB3E; }
+
+@media (max-width: 1000px) {
+  .footer-wrapper {
+    width: 100% !important; }
+    .footer-wrapper .footer-container {
+      width: calc(100% - 40px) !important; } }
+
+@media (max-width: 650px) {
+  .footer {
+    height: 80px !important; }
+  .footer-logo {
+    height: 60px !important; }
+  .insta {
+    width: 50px !important;
+    height: 50px !important; }
+  .footer-nav, ul, a {
+    font-size: 10pt !important; }
+    .footer-nav li, ul li, a li {
+      padding: 3px 0px !important; } }
+
+@media (max-width: 500px) {
+  .footer-logo {
+    height: 55px !important; }
+  .insta {
+    width: 50px !important;
+    height: 50px !important; }
+  .footer-nav, ul, a {
+    font-size: 10pt !important; }
+    .footer-nav li, ul li, a li {
+      padding: 3px 0px !important; } }
+
+@media (max-width: 380px) {
+  .footer-logo {
+    height: 50px !important; }
+  .insta {
+    width: 45px !important;
+    height: 45px !important; }
+  .footer-nav, ul, a {
+    font-size: 8pt !important; }
+    .footer-nav li, ul li, a li {
+      padding: 3px 0px !important; } }
 
 .home {
   display: -ms-flexbox;
@@ -545,7 +653,8 @@ a {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+        color: #292F36; }
         .home .home-container .home-right .home-text h3 {
           margin-bottom: 30px;
           font-size: 18pt; }
@@ -555,12 +664,26 @@ a {
           font-size: 14pt; }
         .home .home-container .home-right .home-text .first {
           margin-bottom: 30px; }
+        .home .home-container .home-right .home-text .home-contact-link, .home .home-container .home-right .home-text .home-contact-link:hover, .home .home-container .home-right .home-text .home-contact-link:visited {
+          font-size: 14pt !important;
+          color: #292F36;
+          text-decoration: underline; }
 
-.bio .bio-container .page-title {
-  color: #4C934C;
-  font-size: 26pt;
-  margin-top: 12px;
-  margin-bottom: 20px; }
+@media (max-width: 800px) {
+  .home-container {
+    -ms-flex-direction: column !important;
+        flex-direction: column !important;
+    margin-top: 20px !important; }
+    .home-container .home-left {
+      width: 100% !important;
+      height: 350px !important;
+      background-position: center !important;
+      background-position: 0px -20px !important;
+      background-repeat: no-repeat !important; }
+    .home-container .line {
+      display: none !important; }
+    .home-container .home-right {
+      width: 100% !important; } }
 
 .bio .bio-image {
   height: 400px;
@@ -572,8 +695,140 @@ a {
 .bio .bio-text {
   font-family: "Avenir-Book";
   line-height: 30px;
-  margin-top: 15px; }
+  margin-top: 15px;
+  color: #292F36; }
   .bio .bio-text p {
     margin: 0; }
   .bio .bio-text .bio {
     margin-bottom: 15px; }
+    .bio .bio-text .bio a, .bio .bio-text .bio a:visited, .bio .bio-text .bio a:hover, .bio .bio-text .bio a:focus {
+      text-decoration: underline;
+      color: #292F36;
+      font-size: 12pt !important; }
+
+@media (max-width: 700px) {
+  .bio .bio-image {
+    height: 300px !important; } }
+
+@media (max-width: 550px) {
+  .bio .bio-image {
+    height: 250px !important; } }
+
+@media (max-width: 400px) {
+  .bio .bio-image {
+    height: 200px !important; } }
+
+.contact .contact-container .first, .contact .contact-container .second {
+  font-family: "Avenir-Book";
+  font-size: 14pt; }
+
+.contact .contact-form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: #4C934C;
+  background: red; }
+  .contact .contact-form .form-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+        align-self: center; }
+    .contact .contact-form .form-container .name p,
+    .contact .contact-form .form-container .email p,
+    .contact .contact-form .form-container .phone p,
+    .contact .contact-form .form-container .message p {
+      font-family: "Big John";
+      font-size: 16px;
+      text-decoration: underline;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 5px; }
+    .contact .contact-form .form-container .name input,
+    .contact .contact-form .form-container .email input,
+    .contact .contact-form .form-container .phone input,
+    .contact .contact-form .form-container .message input {
+      margin-bottom: 10px;
+      font-family: "Avenir-Book"; }
+    .contact .contact-form .form-container .name textarea,
+    .contact .contact-form .form-container .email textarea,
+    .contact .contact-form .form-container .phone textarea,
+    .contact .contact-form .form-container .message textarea {
+      font-family: "Avenir-Book"; }
+    .contact .contact-form .form-container .name .yourname,
+    .contact .contact-form .form-container .name .youremail,
+    .contact .contact-form .form-container .name .yourphone,
+    .contact .contact-form .form-container .email .yourname,
+    .contact .contact-form .form-container .email .youremail,
+    .contact .contact-form .form-container .email .yourphone,
+    .contact .contact-form .form-container .phone .yourname,
+    .contact .contact-form .form-container .phone .youremail,
+    .contact .contact-form .form-container .phone .yourphone {
+      width: 550px;
+      height: 30px;
+      border: 2px solid #292F36; }
+    .contact .contact-form .form-container .message .yourmessage {
+      width: 550px;
+      height: 200px;
+      border: 2px solid #292F36;
+      text-align: top;
+      resize: none; }
+    .contact .contact-form .form-container .button .submitbutton {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+      padding-top: 9px;
+      width: 100px;
+      color: #292F36;
+      height: 35px;
+      font-family: "Big John";
+      float: right;
+      background: #4C934C;
+      border: 2px solid #292F36; }
+    .contact .contact-form .form-container .button .submitbutton:hover {
+      background-color: #91CB3E;
+      color: white;
+      border: 2px solid white; }
+  .contact .contact-form .contact-phone {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+        align-self: center;
+    text-align: center;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    .contact .contact-form .contact-phone .phone-cta, .contact .contact-form .contact-phone p {
+      color: #292F36 !important;
+      font-family: "Avenir-Book";
+      font-size: 16pt; }
+
+@media (max-width: 630px) {
+  .contact .contact-form .name .yourname,
+  .contact .contact-form .name .youremail,
+  .contact .contact-form .name .yourphone,
+  .contact .contact-form .email .yourname,
+  .contact .contact-form .email .youremail,
+  .contact .contact-form .email .yourphone,
+  .contact .contact-form .phone .yourname,
+  .contact .contact-form .phone .youremail,
+  .contact .contact-form .phone .yourphone {
+    width: 90vw !important; }
+  .contact .contact-form .message .yourmessage {
+    width: 90vw !important; } }
+
+.page-title {
+  color: #4C934C;
+  font-size: 26pt;
+  margin-top: 18px;
+  letter-spacing: 4px;
+  margin-bottom: 10px; }
+
+@media screen and (max-width: 650px) {
+  .page-title {
+    font-size: 22px; } }

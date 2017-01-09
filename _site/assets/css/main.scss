@@ -10,3 +10,18 @@
 @import "4-sections/footer";
 @import "4-sections/home";
 @import "4-sections/bio";
+@import "4-sections/contact";
+
+
+.page-title {
+  color: $darkgreen;
+  font-size: 26pt;
+  margin-top: 18px;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  .page-title {
+    font-size: 22px; }
+}

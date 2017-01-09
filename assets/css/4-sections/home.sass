@@ -31,6 +31,7 @@
       .home-text
         display: flex
         flex-direction: column
+        color: $gunmetal
         h3
           margin-bottom: 30px
           font-size: 18pt
@@ -40,3 +41,26 @@
           font-size: 14pt
         .first
           margin-bottom: 30px
+
+        .home-contact-link, .home-contact-link:hover, .home-contact-link:visited
+          font-size: 14pt !important
+          color: $gunmetal
+          text-decoration: underline
+
+
+
+@media(max-width: 800px)
+  .home-container
+    flex-direction: column !important
+    margin-top: 20px !important
+    .home-left
+      width: 100% !important
+      height: 350px !important
+      background:
+        position: center !important
+        position: 0px -20px !important
+        repeat: no-repeat !important
+    .line
+      display: none !important
+    .home-right
+      width: 100% !important

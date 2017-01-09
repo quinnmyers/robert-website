@@ -1,1 +1,26 @@
-h1 this is the contact page
+section.contact
+  .contact-container
+    h1.page-title CONTACT
+    p.first I am glad you took the time to visit my site and learn more about me! Please contact me if you have any questions or even just want to meet for coffee sometime!
+    p.second I look forward to hearing from you!
+
+    .contact-form
+      .form-container
+        form(action="https://formspree.io/robertmriordan@gmail.com" method="POST")
+          .name
+            p Name
+            input(type="text" name="name" class="yourname")
+          .email
+            p E-Mail
+            input(type="email" name="_replyto" class="youremail")
+          .phone
+            p Phone Number
+            input(type="text" name="_phone" class="yourphone")
+          .message
+            p Message
+            textarea(type="message" name="_message" class="yourmessage")
+          .button
+            input(type="submit" value="Send" class="submitbutton")
+
+      .contact-phone
+        p.phone-cta ...or call 702-301-2447

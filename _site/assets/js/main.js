@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $(.hamburger).on('click', (function) {
-    .addClass(".active");
-  })
-})
+  $(".hamburger").on('click', function() {
+    $(".mobile-nav").toggleClass("is-active");
+  });
+});

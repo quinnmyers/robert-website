@@ -1,12 +1,7 @@
 .bio
   .bio-container
-    .page-title
-      color: $darkgreen
-      font-size: 26pt
-      margin-top: 12px
-      margin-bottom: 20px
   .bio-image
-    height: 500px
+    height: 400px
     width: 100%
 
     background:
@@ -17,5 +12,28 @@
     font-family: "Avenir-Book"
     line-height: 30px
     margin-top: 15px
+    color: $gunmetal
     p
       margin: 0
+    .bio
+      margin-bottom: 15px
+      a, a:visited, a:hover, a:focus
+        text-decoration: underline
+        color: $gunmetal
+        font-size: 12pt !important
+
+@media (max-width: 700px)
+  .bio
+    .bio-image
+      height: 300px !important
+
+
+@media (max-width: 550px)
+  .bio
+    .bio-image
+      height: 250px !important
+
+@media (max-width: 400px)
+  .bio
+    .bio-image
+      height: 200px !important
