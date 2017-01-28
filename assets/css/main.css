@@ -391,8 +391,7 @@ a {
   -ms-flex-direction: column;
       flex-direction: column;
   min-height: 100vh;
-  width: 100%;
-  background: lightskyblue; }
+  width: 100%; }
   .main-container .content-container {
     display: -ms-flexbox;
     display: flex;
@@ -403,15 +402,17 @@ a {
     -ms-flex-item-align: center;
         align-self: center;
     width: 1000px;
-    min-height: calc(100vh - 120px);
-    background: pink; }
+    min-height: calc(100vh - 120px); }
     .main-container .content-container .content-column {
-      background: yellow;
       width: calc(100% - 40px); }
 
 @media (max-width: 1000px) {
   .content-container {
     width: 100% !important; } }
+
+@media (max-width: 420px) {
+  body h1, body h2, body h3, body h4, body h5, body h6 {
+    text-align: center !important; } }
 
 .header {
   display: -ms-flexbox;
@@ -463,7 +464,6 @@ a {
             align-self: center;
         height: 30px;
         width: 50px;
-        background: red;
         margin-right: 20px; }
         .header .header-wrapper .header-container .hamburger .line1, .header .header-wrapper .header-container .hamburger .line2, .header .header-wrapper .header-container .hamburger .line3 {
           background: #292F36;
@@ -476,8 +476,7 @@ a {
       justify-content: flex-end;
   width: 100%;
   -ms-flex-item-align: center;
-      align-self: center;
-  background: khaki; }
+      align-self: center; }
   .mobile-nav .mobile-nav-list, .mobile-nav ul {
     list-style: none;
     text-align: right;
@@ -522,7 +521,7 @@ a {
 .footer {
   display: -ms-flexbox;
   display: flex;
-  height: auto;
+  height: 150px;
   -ms-flex-pack: center;
       justify-content: center; }
   .footer .footer-wrapper {
@@ -531,8 +530,7 @@ a {
     -ms-flex-pack: center;
         justify-content: center;
     width: 100%;
-    border-top: 2px solid #25291C;
-    background: blue; }
+    border-top: 2px solid #25291C; }
     .footer .footer-wrapper .footer-container {
       display: -ms-flexbox;
       display: flex;
@@ -546,16 +544,14 @@ a {
         display: flex;
         -ms-flex-item-align: center;
             align-self: center;
-        height: 75px;
-        background: red; }
+        height: 75px; }
       .footer .footer-wrapper .footer-container .insta {
         height: 65px;
         width: 65px;
-        background: lightskyblue;
-          background-image: url(/assets/images/insta-icon.svg);
-          background-repeat: no-repeat;
-          background-position: center;
-          background-size: contain; }
+        background-image: url(/assets/images/insta-icon.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain; }
       .footer .footer-wrapper .footer-container .footer-nav, .footer .footer-wrapper .footer-container ul {
         list-style: none;
         font-family: "Avenir-Book";
@@ -564,8 +560,7 @@ a {
         color: #91CB3E;
         margin: 0;
         padding: 0;
-        margin-top: 4px;
-        background: khaki; }
+        margin-top: 4px; }
         .footer .footer-wrapper .footer-container .footer-nav li, .footer .footer-wrapper .footer-container ul li {
           padding: 5px 0px; }
           .footer .footer-wrapper .footer-container .footer-nav li a, .footer .footer-wrapper .footer-container .footer-nav li a:hover, .footer .footer-wrapper .footer-container .footer-nav li a:visited, .footer .footer-wrapper .footer-container ul li a, .footer .footer-wrapper .footer-container ul li a:hover, .footer .footer-wrapper .footer-container ul li a:visited {
@@ -618,8 +613,7 @@ a {
   -ms-flex-direction: column;
       flex-direction: column;
   min-height: 100vh;
-  width: 100%;
-  background: green; }
+  width: 100%; }
   .home .home-container {
     display: -ms-flexbox;
     display: flex;
@@ -628,15 +622,13 @@ a {
         justify-content: space-between;
     -ms-flex-align: center;
         align-items: center;
-    margin-top: 100px;
-    background: yellow; }
+    margin-top: 100px; }
     .home .home-container .home-left {
       width: 45%;
       height: 400px;
-      background: red;
-        background-image: url(/assets/images/roberthomeimage.jpg);
-        background-size: cover;
-        background-position: top; }
+      background-image: url(/assets/images/roberthomeimage.jpg);
+      background-size: cover;
+      background-position: top; }
     .home .home-container .line {
       height: 300px;
       width: 2px;
@@ -647,8 +639,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
       width: 45%;
-      min-height: 100%;
-      background: red; }
+      min-height: 100%; }
       .home .home-container .home-right .home-text {
         display: -ms-flexbox;
         display: flex;
@@ -680,6 +671,8 @@ a {
       background-position: center !important;
       background-position: 0px -20px !important;
       background-repeat: no-repeat !important; }
+    .home-container .home-text {
+      margin-top: 20px !important; }
     .home-container .line {
       display: none !important; }
     .home-container .home-right {
@@ -705,6 +698,25 @@ a {
       text-decoration: underline;
       color: #292F36;
       font-size: 12pt !important; }
+  .bio .bio-text .bio-name {
+    font-size: 16pt !important; }
+
+.bio .pdf-download-btn {
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  width: 200px;
+  margin: 0 auto;
+  background: #4C934C;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-bottom: 20px; }
+  .bio .pdf-download-btn .pdf-btn-text {
+    color: #292F36;
+    font-size: 12pt;
+    text-align: center;
+    font-family: "Big John";
+    color: white; }
 
 @media (max-width: 700px) {
   .bio .bio-image {
@@ -725,9 +737,8 @@ a {
       flex-direction: column;
   height: auto;
   width: 100%;
-  background: khaki;
-  -ms-flex-direction: column;
-      flex-direction: column; }
+  -ms-flex-pack: center;
+      justify-content: center; }
   .gallery .gallery-container .production-container {
     display: -ms-flexbox;
     display: flex;
@@ -735,7 +746,6 @@ a {
         flex-direction: column;
     width: 100%;
     height: auto;
-    background: lightskyblue;
     margin-bottom: 30px; }
     .gallery .gallery-container .production-container .production-title, .gallery .gallery-container .production-container h2 {
       font-family: "Avenir-Book";
@@ -748,15 +758,13 @@ a {
           justify-content: space-between;
       -ms-flex-align: center;
           align-items: center;
-      width: 100%;
-      height: 250px;
-      background: purple; }
+      width: auto;
+      height: 250px; }
       .gallery .gallery-container .production-container .img-row .img1, .gallery .gallery-container .production-container .img-row .img2, .gallery .gallery-container .production-container .img-row .img3, .gallery .gallery-container .production-container .img-row .img4, .gallery .gallery-container .production-container .img-row .img5, .gallery .gallery-container .production-container .img-row .img6 {
         height: 80%;
         width: 30%;
-        background: red;
-          background-size: cover;
-          background-repeat: no-repeat; }
+        background-size: cover;
+        background-repeat: no-repeat; }
       .gallery .gallery-container .production-container .img-row .img1 {
         background-image: url(/assets/images/afunnything/forumhero.jpg);
         background-position: 0px -30px; }
@@ -765,19 +773,20 @@ a {
         background-position: 0px 0px; }
       .gallery .gallery-container .production-container .img-row .img3 {
         background-image: url(/assets/images/afunnything/forumrob_anna.jpg);
-        background-position: 0px 0px; }
+        background-position: 0px 0px;
+        background-size: cover; }
       .gallery .gallery-container .production-container .img-row .img4 {
         background-image: url(/assets/images/afunnything/forumrob.jpg);
-        background-position: 0px -120px; }
+        background-position: 0px -120px;
+        background-size: cover; }
       .gallery .gallery-container .production-container .img-row .img5 {
         background-image: url(/assets/images/afunnything/rob_michele.jpg);
         background-position: 0px -40px; }
       .gallery .gallery-container .production-container .img-row .img7, .gallery .gallery-container .production-container .img-row .img8, .gallery .gallery-container .production-container .img-row .img9 {
         height: 80%;
         width: 30%;
-        background: red;
-          background-size: cover;
-          background-repeat: no-repeat; }
+        background-size: cover;
+        background-repeat: no-repeat; }
       .gallery .gallery-container .production-container .img-row .img7 {
         background-image: url(/assets/images/biglove/lydia_nikos.jpg);
         background-position: 0px 0px; }
@@ -791,9 +800,8 @@ a {
       .gallery .gallery-container .production-container .img-row .img13, .gallery .gallery-container .production-container .img-row .img14, .gallery .gallery-container .production-container .img-row .img15 {
         height: 80%;
         width: 30%;
-        background: red;
-          background-size: cover;
-          background-repeat: no-repeat; }
+        background-size: cover;
+        background-repeat: no-repeat; }
       .gallery .gallery-container .production-container .img-row .img10 {
         background-image: url(/assets/images/pajama/pjgamedreamballet.jpg);
         background-position: 0px 0px; }
@@ -809,41 +817,55 @@ a {
     .gallery .gallery-container .production-container .img16, .gallery .gallery-container .production-container .img17, .gallery .gallery-container .production-container .img18 {
       height: 80%;
       width: 30%;
-      background: red;
-        background-size: cover;
-        background-repeat: no-repeat; }
+      background-size: cover;
+      background-repeat: no-repeat; }
     .gallery .gallery-container .production-container .img16 {
       background-image: url(/assets/images/heart/heartmoviestill.jpg);
       background-position: center; }
   .gallery .gallery-container .img19, .gallery .gallery-container .img20, .gallery .gallery-container .img21 {
     height: 80%;
     width: 30%;
-    background: red;
-      background-size: cover;
-      background-repeat: no-repeat; }
+    background-size: cover;
+    background-repeat: no-repeat; }
   .gallery .gallery-container .img19 {
     background-image: url(/assets/images/mermaid/mermaid1.jpg);
     background-position: 0px -10px; }
   .gallery .gallery-container .img22, .gallery .gallery-container .img23, .gallery .gallery-container .img24 {
     height: 80%;
     width: 30%;
-    background: red;
-      background-size: cover;
-      background-repeat: no-repeat; }
+    background-size: cover;
+    background-repeat: no-repeat; }
   .gallery .gallery-container .img22 {
     background-image: url(/assets/images/scarystories/ss1.jpg);
     background-position: 0px 0px; }
   .gallery .gallery-container .img25, .gallery .gallery-container .img26, .gallery .gallery-container .img27 {
     height: 80%;
     width: 30%;
-    background: red;
-      background-size: cover;
-      background-repeat: no-repeat; }
+    background-size: cover;
+    background-repeat: no-repeat; }
   .gallery .gallery-container .img25 {
     background-image: url(/assets/images/spellingbee/spellingbeebarfee.jpg);
     background-position: 0px -50px; }
   .gallery .gallery-container .first {
     margin-top: 30px; }
+
+@media (max-width: 420px) {
+  .production-title, h2 {
+    text-align: center !important;
+    margin-bottom: 10px !important; }
+  .img-row {
+    -ms-flex-direction: column !important;
+        flex-direction: column !important;
+    height: auto !important; }
+    .img-row .img1, .img-row .img2, .img-row .img3, .img-row .img4, .img-row .img5,
+    .img-row .img6, .img-row .img7, .img-row .img8, .img-row .img9, .img-row .img10,
+    .img-row .img11, .img-row .img12, .img-row .img13, .img-row .img14, .img-row .img15,
+    .img-row .img16, .img-row .img17, .img-row .img18, .img-row .img19, .img-row .img20,
+    .img-row .img21, .img-row .img22, .img-row .img23, .img-row .img24, .img-row .img25,
+    .img-row .img26, .img-row .img27 {
+      width: 100% !important;
+      height: 220px !important;
+      margin-bottom: 10px !important; } }
 
 .contact .contact-container .first, .contact .contact-container .second {
   font-family: "Avenir-Book";
@@ -857,8 +879,7 @@ a {
   margin: auto;
   margin-top: 40px;
   margin-bottom: 40px;
-  color: #4C934C;
-  background: red; }
+  color: #4C934C; }
   .contact .contact-form .form-container {
     display: -ms-flexbox;
     display: flex;

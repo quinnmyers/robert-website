@@ -4,15 +4,15 @@
     flex-direction: column
     height: auto
     width: 100%
-    background: khaki
-    flex-direction: column
+    background:
+    justify-content: center
 
     .production-container
       display: flex
       flex-direction: column
       width: 100%
       height: auto
-      background: lightskyblue
+      background:
       margin-bottom: 30px
       .production-title, h2
         font-family: "Avenir-Book"
@@ -22,14 +22,14 @@
         display: flex
         justify-content: space-between
         align-items: center
-        width: 100%
+        width: auto
         height: 250px
-        background: purple
+        background:
         //a funny thing happened photos
         .img1, .img2, .img3, .img4, .img5, .img6
           height: 80%
           width: 30%
-          background: red
+          background:
             size: cover
             repeat: no-repeat
         .img1
@@ -44,10 +44,12 @@
           background:
             image: url(/assets/images/afunnything/forumrob_anna.jpg)
             position: 0px 0px
+            size: cover
         .img4
           background:
             image: url(/assets/images/afunnything/forumrob.jpg)
             position: 0px -120px
+            size: cover
         .img5
           background:
             image: url(/assets/images/afunnything/rob_michele.jpg)
@@ -57,7 +59,7 @@
         .img7, .img8, .img9
           height: 80%
           width: 30%
-          background: red
+          background:
             size: cover
             repeat: no-repeat
         .img7
@@ -78,7 +80,7 @@
         .img13, .img14, .img15
           height: 80%
           width: 30%
-          background: red
+          background:
             size: cover
             repeat: no-repeat
         .img10
@@ -105,7 +107,7 @@
       .img16, .img17, .img18,
         height: 80%
         width: 30%
-        background: red
+        background:
           size: cover
           repeat: no-repeat
       .img16
@@ -119,7 +121,7 @@
     .img19, .img20, .img21,
       height: 80%
       width: 30%
-      background: red
+      background:
         size: cover
         repeat: no-repeat
     .img19
@@ -133,7 +135,7 @@
     .img22, .img23, .img24,
       height: 80%
       width: 30%
-      background: red
+      background:
         size: cover
         repeat: no-repeat
     .img22
@@ -145,19 +147,38 @@
 
 
     // spelling bee barfee photos here
-    .img25, .img26, .img27,
+    .img25, .img26, .img27
       height: 80%
       width: 30%
-      background: red
+      background:
         size: cover
         repeat: no-repeat
     .img25
       background:
         image: url(/assets/images/spellingbee/spellingbeebarfee.jpg)
         position: 0px -50px
-    .img26
-    .img27
+
 
 
     .first
       margin-top: 30px
+
+
+
+@media(max-width: 420px)
+  .production-title, h2
+    text-align: center !important
+    margin-bottom: 10px !important
+  .img-row
+    flex-direction: column !important
+    height: auto !important
+
+    .img1, .img2, .img3, .img4, .img5,
+    .img6, .img7, .img8, .img9, .img10,
+    .img11, .img12, .img13, .img14, .img15,
+    .img16, .img17, .img18, .img19, .img20,
+    .img21, .img22, .img23, .img24, .img25,
+    .img26, .img27
+      width: 100% !important
+      height: 220px !important
+      margin-bottom: 10px !important
